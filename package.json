@@ -4,9 +4,12 @@
   "description": "DevSpace – Developer community platform",
   "scripts": {
     "install": "cd backend && npm install && cd ../frontend && npm install",
-    "dev:backend":  "cd backend  && npm run dev",
+    "dev:backend": "cd backend  && npm run dev",
     "dev:frontend": "cd frontend && npm run dev",
     "setup": "cp backend/.env.example backend/.env && cp frontend/.env.example frontend/.env.local && echo '✅ .env files created — fill in your secrets!'"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "mongodb": "^7.2.0"
+  }
 }
